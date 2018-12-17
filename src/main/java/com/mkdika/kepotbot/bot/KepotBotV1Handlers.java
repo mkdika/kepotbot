@@ -24,7 +24,7 @@ public class KepotBotV1Handlers extends TelegramLongPollingBot {
         if (update.hasMessage()) {
             Message message = update.getMessage();
             
-            
+            System.out.println("msg: " + message.getText());
                         
             //check if the message has text. it could also contain for example a location ( message.hasLocation() )
             if (message.hasText() ) {
